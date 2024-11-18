@@ -1,5 +1,113 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up general styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Container for centering the form */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+}
+
+/* Radio and checkbox styling */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 5px;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Textarea specific styling */
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 14px;
+  }
 }
